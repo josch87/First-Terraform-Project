@@ -4,8 +4,14 @@ variable "aws_region" {
 }
 
 variable "aws_availability_zone_a" {
-  description = "First availability zone"
+  description = "Primary availability zone"
   type = string
+}
+
+variable "public_subnet_1_cidr" {
+  description = "CIDR block for Public Subnet 1"
+  type = string
+  default = "10.0.1.0/24"
 }
 
 variable "private_subnet_1_cidr" {
