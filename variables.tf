@@ -1,6 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy into"
   type = string
+  default = "us-west-2"
 }
 
 variable "my_vps_cidr" {
@@ -12,6 +13,7 @@ variable "my_vps_cidr" {
 variable "aws_availability_zone_a" {
   description = "Primary availability zone"
   type = string
+  default = "us-west-2a"
 }
 
 variable "public_subnet_1_cidr" {
