@@ -3,6 +3,12 @@ variable "aws_region" {
   type = string
 }
 
+variable "my_vps_cidr" {
+  description = "CIDR block for the VPC"
+  type = string
+  default = "10.0.0.0/20"
+}
+
 variable "aws_availability_zone_a" {
   description = "Primary availability zone"
   type = string
